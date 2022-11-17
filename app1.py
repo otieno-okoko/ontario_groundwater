@@ -6,7 +6,9 @@ from dash import html
 import plotly.graph_objs as go
 # urlfile = 'https://github.com/otieno-okoko/ontario_groundwater/blob/main/southontario_gw.csv'
 # df = pd.read_csv(urlfile, sep=',', encoding = 'latin1')
-df = pd.read_csv("D:/my_dash_app/Ontario_GW_data.csv")
+urlfile ='https://raw.githubusercontent.com/otieno-okoko/ontario_groundwater/main/southontario_gw.csv'
+df = pd.read_csv(urlfile, error_bad_lines=False, encoding='latin-1')
+# df = pd.read_csv("D:/my_dash_app/Ontario_GW_data.csv")
 
 app = dash.Dash()
 features = df.columns 
