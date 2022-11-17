@@ -17,7 +17,7 @@ app.layout = html.Div([
 html.Div([
 dcc.Dropdown(id= 'xaxis', options=[{'label': i, 'value':i} for i in features],
 value ='Rock_elevation_mASL')
-], style={'width':'48%','display':'inline-block'}),
+], style={'width':'49%','display':'inline-block'}),
 html.Div([dcc.Dropdown(id= 'yaxis', options=[{'label': i, 'value':i} for i in features],
 value ='pH') ],style={'width':'48%','display':'inline-block'}), dcc.Graph(id = 'feature-graphic')
 ], style={'padding':10})
